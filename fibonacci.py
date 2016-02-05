@@ -26,6 +26,10 @@ def is_fib(val):
 def fib_pos(val):
   fib = [0, 1]
   n = 2
+  if val == 0:
+    print("0 is the first fibonacci number")
+  if val == 1:
+    print("1 is the second and third fibonacci number")
   while True:
     w = fib[(len(fib)-1)] + fib[(len(fib)-2)]
     fib.append(w)
